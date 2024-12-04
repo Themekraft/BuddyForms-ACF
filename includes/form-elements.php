@@ -153,7 +153,7 @@ add_action( 'acf/input/admin_enqueue_scripts', 'buddyforms_acf_form_builder_form
 
 function buddyforms_acf_form_builder_form_elements_enqueue_scripts() {
 	if ( ! is_admin() ) {
-		wp_enqueue_script( 'buddyforms-acf-js', BUDDYFORMS_ACF_PLUGIN_URL . '/assets/js/buddyforms-acf.js', array(
+		wp_enqueue_script( 'buddyforms-acf-js', BUDDYFORMS_ACF_PLUGIN_URL . 'assets/js/buddyforms-acf.js', array(
 			'jquery',
 			'acf-input',
 			'buddyforms-js'
